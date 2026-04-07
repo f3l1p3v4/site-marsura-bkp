@@ -90,6 +90,23 @@
 </style>
 
 <script is:inline>
+  function loadTrackingScripts() {
+    if (window.trackingLoaded) return;
+    window.trackingLoaded = true;
+
+    const scripts = document.querySelectorAll('script[type="text/plain"][data-tracking="true"]');
+    scripts.forEach(oldScript => {
+      const newScript = document.createElement("script");
+      if (oldScript.src) {
+        newScript.src = oldScript.src;
+        newScript.async = true;
+      } else {
+        newScript.innerHTML = oldScript.innerHTML;
+      }
+      document.head.appendChild(newScript);
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     const banner = document.getElementById("cookie-banner");
     const acceptBtn = document.getElementById("accept-cookies");
@@ -97,14 +114,16 @@
 
     const cookieConsent = localStorage.getItem("cookieConsent");
 
-    if (!cookieConsent) {
+    if (cookieConsent === "accepted") {
+      loadTrackingScripts();
+    } else if (!cookieConsent) {
       banner.style.display = "block";
     }
 
     acceptBtn.addEventListener("click", function () {
       localStorage.setItem("cookieConsent", "accepted");
       banner.style.display = "none";
-      // Here you could programmatically trigger GTM/Pixel initialization if they were blocked
+      loadTrackingScripts();
     });
 
     rejectBtn.addEventListener("click", function () {

@@ -339,15 +339,15 @@ header
 --------------------------------------------- 
 */
 
-.background-header {
+/*.background-header {
   /* background-color: #fff!important;
   height: 70px!important;
   position: fixed!important;
   top: 0px;
   left: 0px;
   right: 0px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important; */
-}
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important; 
+}*/
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
@@ -428,9 +428,9 @@ header
   line-height: 80px;
 }
 
-.background-header .main-nav .nav {
-  /* margin-top: 20px !important; */
-}
+/*.background-header .main-nav .nav {
+  margin-top: 20px !important; 
+}*/
 
 .header-area .main-nav .nav {
   float: right;
@@ -746,9 +746,9 @@ header .faixa p {
   min-height: 80px;
 }
 
-.header-area .nav {
-  /* margin-top: 30px; */
-}
+/*.header-area .nav {
+  margin-top: 30px; 
+}*/
 
 .header-area.header-sticky .nav li a.active {
   color: var(--cor-primaria-1);
@@ -841,9 +841,10 @@ header .faixa p {
   /* .background-header .nav {
     margin-top: 80px;
   } */
-  .header-area .main-nav .nav li:first-child {
-    /* border-top: 1px solid #eee; */
-  }
+
+  /* .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid #eee; 
+  }*/
 
   .header-area.header-sticky .nav {
     margin-top: 100px;

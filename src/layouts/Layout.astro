@@ -13,7 +13,7 @@ const { title, description = "Agência especializada em tráfego pago, design, d
     <meta charset="UTF-8" />
     
     <!-- Google Tag Manager -->
-    <script is:inline>
+    <script type="text/plain" data-tracking="true" is:inline>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -23,15 +23,14 @@ const { title, description = "Agência especializada em tráfego pago, design, d
     <!-- End Google Tag Manager -->
 
     <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-37YVS1K54X"></script>
-    <script is:inline>
+    <script type="text/plain" data-tracking="true" is:inline src="https://www.googletagmanager.com/gtag/js?id=G-37YVS1K54X"></script>
+    <script type="text/plain" data-tracking="true" is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-37YVS1K54X');
     </script>
-  
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content={description} />
     <meta name="author" content="Marsura Digital" />
@@ -56,7 +55,7 @@ const { title, description = "Agência especializada em tráfego pago, design, d
     <link rel="stylesheet" href="/assets/css/owl.css" />
 
     <!-- Meta Pixel Code -->
-    <script is:inline>
+    <script type="text/plain" data-tracking="true" is:inline>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -68,16 +67,9 @@ const { title, description = "Agência especializada em tráfego pago, design, d
       fbq('init', '456254767425181');
       fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=456254767425181&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T32R9W38"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <slot />
 
