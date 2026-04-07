@@ -1,0 +1,95 @@
+---
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Agência especializada em tráfego pago, design, desenvolvimento web e automação de marketing." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T32R9W38');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-37YVS1K54X"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-37YVS1K54X');
+    </script>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content={description} />
+    <meta name="author" content="Marsura Digital" />
+
+    <!-- Verify Facebook -->
+    <meta name="facebook-domain-verification" content="t95rkn37lv24y13gjpt3bmtjgh52dz" />
+    <!-- End Verify Facebook -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+
+    <title>{title} | Marsura Digital</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/animated.css" />
+    <link rel="stylesheet" href="/assets/css/owl.css" />
+
+    <!-- Meta Pixel Code -->
+    <script is:inline>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '456254767425181');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=456254767425181&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T32R9W38"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <slot />
+
+    <!-- Scripts Globais / Vendors -->
+    <script is:inline src="/vendor/jquery/jquery.min.js"></script>
+    <script is:inline src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script is:inline src="/assets/js/owl-carousel.js"></script>
+    <script is:inline src="/assets/js/animation.js"></script>
+    <script is:inline src="/assets/js/imagesloaded.js"></script>
+    <script is:inline src="/assets/js/templatemo-custom.js"></script>
+    <script is:inline src="/assets/js/animar-section.js"></script>
+    <script is:inline src="/assets/js/section-form.js"></script>
+    <script is:inline src="/assets/js/animate-value.js"></script>
+  </body>
+</html>

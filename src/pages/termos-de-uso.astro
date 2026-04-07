@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+---
+
+<Layout title="Termos de Uso" description="Termos de Uso da Marsura Digital.">
+  <Header />
+
+  <section class="legal-page" style="padding: 150px 20px 80px 20px; max-width: 900px; margin: 0 auto; min-height: 80vh;">
+    <h1 style="font-size: 36px; font-weight: 700; margin-bottom: 30px; color: #1e1e1e;">Termos de Uso</h1>
+    
+    <div style="font-family: 'Poppins', sans-serif; color: #444; line-height: 1.8;">
+      <p>Ao acessar e navegar neste site, você concorda em cumprir e estar vinculado aos seguintes termos e condições de uso.</p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">1. Aceitação</h3>
+      <p>O uso deste site está sujeito a estes Termos de Uso. É altamente recomendável a leitura atenta de todas as condições. Se você não concordar com qualquer parte deste documento, não utilize nosso site e os serviços oferecidos.</p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">2. Serviços</h3>
+      <p>A Marsura Digital fornece serviços de marketing, gestão de tráfego, design e automação. As informações contidas neste site têm a finalidade de apresentar nossas soluções ao público e captar potenciais clientes.</p>
+      
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">3. Propriedade Intelectual</h3>
+      <p>Todo o conteúdo presente, incluindo textos, gráficos, imagens (com exceção daquelas cedidas por clientes parceiros e de domínio público), logotipos, ícones e softwares, é de propriedade da Marsura Digital ou de nossos licenciadores e é protegido pelas leis de direitos autorais internacionais e do Brasil.</p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">4. Isenção de Responsabilidade</h3>
+      <p>Embora busquemos manter as informações no site sempre atualizadas e corretas, a Marsura Digital não garante resultados absolutos, visto que o marketing digital depende de múltiplas variáveis. Casos de sucesso listados na seção "Referências/Avaliações" representam os resultados de clientes específicos e não são uma promessa de resultados idênticos.</p>
+
+      <p style="margin-top: 40px; font-size: 14px; text-align: center;">Última atualização: {new Date().toLocaleDateString('pt-BR')}</p>
+    </div>
+  </section>
+
+  <Footer />
+  <CookieBanner />
+</Layout>

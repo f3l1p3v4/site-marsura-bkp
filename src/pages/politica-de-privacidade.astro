@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import CookieBanner from "../components/CookieBanner.astro";
+---
+
+<Layout
+  title="Política de Privacidade"
+  description="Política de Privacidade da Marsura Digital."
+>
+  <Header />
+
+  <section
+    class="legal-page"
+    style="padding: 150px 20px 80px 20px; max-width: 900px; margin: 0 auto; min-height: 80vh;"
+  >
+    <h1
+      style="font-size: 36px; font-weight: 700; margin-bottom: 30px; color: #1e1e1e;"
+    >
+      Política de Privacidade
+    </h1>
+
+    <div
+      style="font-family: 'Poppins', sans-serif; color: #444; line-height: 1.8;"
+    >
+      <p>
+        A Marsura Digital tem o compromisso de respeitar a sua privacidade e
+        garantir a proteção dos dados pessoais dos usuários do nosso site.
+      </p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">
+        1. Coleta de Dados Pessoais
+      </h3>
+      <p>
+        Coletamos informações que você compartilha conosco quando preenche
+        nossos formulários de contato, incluindo mas não limitando a: nome
+        completo, telefone (WhatsApp) e endereço de e-mail. Estes dados são
+        usados unicamente para entrarmos em contato para fornecer nossos
+        serviços de consultoria e vendas.
+      </p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">
+        2. Uso de Cookies e Tecnologias de Rastreamento
+      </h3>
+      <p>
+        Utilizamos cookies estritamente necessários para o funcionamento do site
+        e cookies de terceiros para melhorar a sua experiência e medir nossa
+        base de acessos.
+      </p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">
+        3. Google Ads API e Pixel da Meta (Facebook)
+      </h3>
+      <p>
+        <strong>Cláusula Google Ads API e Marketing:</strong> Utilizamos a API do
+        Google Ads, Google Analytics e o Pixel da Meta para veicular anúncios, acompanhar
+        métricas de conversão e criar listas de remarketing. Estas plataformas utilizam
+        cookies e identificadores anônimos para apresentar anúncios baseados nos seus
+        padrões de navegação e interesses demonstrados em interações anteriores com
+        o nosso site. Em nenhuma hipótese compartilhamos informações pessoalmente
+        identificáveis (como nome, endereço ou e-mail) diretamente com essas ferramentas
+        sem prévia criptografia ou autorização padronizada. Você pode gerenciar ou
+        desativar a personalização de anúncios nas <a
+          href="https://adssettings.google.com/"
+          target="_blank"
+          style="color: var(--cor-primaria-1);"
+          >Configurações de Anúncios do Google</a
+        >.
+      </p>
+
+      <h3 style="margin-top: 30px; font-size: 24px; color: #333;">
+        4. Encarregado de Dados (DPO)
+      </h3>
+      <p>
+        Se você tiver qualquer dúvida sobre como tratamos seus dados pessoais,
+        bem como para solicitar a exclusão ou alteração das suas informações em
+        nosso banco de dados, você pode entrar em contato com nosso Data
+        Protection Officer (DPO):
+      </p>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li><strong>Nome:</strong> Felipe Marsura</li>
+        <li><strong>E-mail do DPO:</strong> dpo@marsuradigital.com.br</li>
+        <li><strong>Contato:</strong> 18 99802-2266</li>
+      </ul>
+
+      <p style="margin-top: 40px; font-size: 14px; text-align: center;">
+        Última atualização: {new Date().toLocaleDateString("pt-BR")}
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+  <CookieBanner />
+</Layout>
